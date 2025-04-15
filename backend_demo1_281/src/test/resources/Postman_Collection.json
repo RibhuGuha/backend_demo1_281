@@ -1,0 +1,3331 @@
+{
+	"info": 
+	{
+		"_postman_id": "1a33718f-0e82-4bb3-b13c-2b4aec9504d2",
+		"name": "demo1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7529375"
+	},
+	"item": [
+	
+	
+			        
+        
+ 	 	
+	
+	
+
+		{
+			"name": "FundingRound",
+			"item": [
+				{
+					"name": "Get Request",
+					"item": [
+						{
+							"name": "GET EntitySet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FundingRoundByRoundId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+
+		{
+					"name": "Post Request",
+					"item": [
+						{
+							"name": "POST Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"RoundType\":\"SeriesA\",\"Status\":\"Paused\",\"RoundId\":33,\"DateOfFunding\":\"2004-11-27\",\"AmountRaised\":847772.06,\"TargetAmount\":271095.31,\"PostValuation\":662443.86}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+		{
+					"name": "Delete Request",
+					"item": [
+						{
+							"name": "Delete a FundingRound",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "PATCH Request",
+					"item": [
+						{
+							"name": "Patch Request of entity",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"RoundType\":\"SeriesA\",\"Status\":\"Paused\",\"RoundId\":33,\"DateOfFunding\":\"2004-11-27\",\"AmountRaised\":847772.06,\"TargetAmount\":271095.31,\"PostValuation\":662443.86}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 1",
+					"item": [		        
+		    
+		                    
+						{
+							"name": "GET raw value of RoundId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/RoundId/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(RoundId)",
+										"RoundId",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=RoundId eq 33\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "RoundId eq 33\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of RoundType",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/RoundType/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(RoundType)",
+										"RoundType",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=RoundType eq SeriesA\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "RoundType eq SeriesA\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of DateOfFunding",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/DateOfFunding/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(DateOfFunding)",
+										"DateOfFunding",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=DateOfFunding eq 2004-11-27\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "DateOfFunding eq 2004-11-27\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of AmountRaised",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/AmountRaised/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(AmountRaised)",
+										"AmountRaised",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=AmountRaised eq 847772.06\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "AmountRaised eq 847772.06\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/Status/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(Status)",
+										"Status",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=Status eq Paused\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Status eq Paused\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of TargetAmount",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/TargetAmount/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(TargetAmount)",
+										"TargetAmount",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=TargetAmount eq 271095.31\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "TargetAmount eq 271095.31\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of PostValuation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/PostValuation/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(PostValuation)",
+										"PostValuation",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=PostValuation eq 662443.86\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "PostValuation eq 662443.86\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+			{
+					"name": "System Query Options 3",
+					"item": [		        
+	
+	
+	{
+							"name": "Get $filter option on enum",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=RoundType eq <<Model.StageName'SeriesA'>>",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "RoundType eq <<Model.StageName'SeriesA'>>"
+										}
+									]
+								}
+							},
+							"response": []
+						} 
+, 	
+	
+	{
+							"name": "Get $filter option on enum",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$filter=Status eq <<Model.RoundStatus'Paused'>>",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Status eq <<Model.RoundStatus'Paused'>>"
+										}
+									]
+								}
+							},
+							"response": []
+						} 
+					    ]
+				        },
+	{
+					"name": "System Query Options 4",
+					"item": [
+					   {
+							"name": "GET #orderBy option on Date field entity set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$orderby=<<Replace with PropName of Date Type>> desc\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Date Type>> desc\n"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $orderby decimal field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$orderby=<<Replace with PropName of Decimal Type>> desc",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Decimal Type>> desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+	                   {
+							"name": "Get $count option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds/$count",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds",
+										"$count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $top option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$top=2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $skip option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds?$skip=2\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds"
+									],
+									"query": [
+										{
+											"key": "$skip",
+											"value": "2\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        }
+						
+ ,
+		{
+					"name": "Navigation  Request",
+					"item": [
+								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/LeadInvestor",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)",
+										"LeadInvestor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on FundingRounds navigation property LeadInvestor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)?$expand=LeadInvestor",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "LeadInvestor"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+,  								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/Investors",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)",
+										"Investors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on FundingRounds navigation property Investors",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)?$expand=Investors",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "Investors"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+,  								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/FundedStartup",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)",
+										"FundedStartup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on FundingRounds navigation property FundedStartup",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)?$expand=FundedStartup",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "FundedStartup"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+,  								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)/StartupLogoIcon",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)",
+										"StartupLogoIcon"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on FundingRounds navigation property StartupLogoIcon",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/FundingRounds(<<replace_with_keyFieldValue>>)?$expand=StartupLogoIcon",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"FundingRounds(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "StartupLogoIcon"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+					    ]
+				        }
+  ]},     	
+	
+			        
+        
+ 	 	
+	
+	
+
+		{
+			"name": "Stage",
+			"item": [
+				{
+					"name": "Get Request",
+					"item": [
+						{
+							"name": "GET EntitySet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "StageByStageId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+
+		{
+					"name": "Post Request",
+					"item": [
+						{
+							"name": "POST Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"Name\":\"PreSeed\",\"StageId\":14,\"Description\":\"consult\",\"CriteriaForNextStage\":\"inspect\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+		{
+					"name": "Delete Request",
+					"item": [
+						{
+							"name": "Delete a Stage",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "PATCH Request",
+					"item": [
+						{
+							"name": "Patch Request of entity",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"Name\":\"PreSeed\",\"StageId\":14,\"Description\":\"consult\",\"CriteriaForNextStage\":\"inspect\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 1",
+					"item": [		        
+		    
+		                    
+						{
+							"name": "GET raw value of StageId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)/StageId/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(StageId)",
+										"StageId",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$filter=StageId eq 14\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "StageId eq 14\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)/Name/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(Name)",
+										"Name",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$filter=Name eq PreSeed\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Name eq PreSeed\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Description",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)/Description/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(Description)",
+										"Description",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$filter=Description eq 'consult'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Description eq 'consult'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of CriteriaForNextStage",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages(<<replace_with_keyFieldValue>>)/CriteriaForNextStage/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages(CriteriaForNextStage)",
+										"CriteriaForNextStage",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$filter=CriteriaForNextStage eq 'inspect'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "CriteriaForNextStage eq 'inspect'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+			{
+					"name": "System Query Options 3",
+					"item": [		        
+	
+	
+	{
+							"name": "Get $filter option on enum",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$filter=Name eq <<Model.StageName'PreSeed'>>",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Name eq <<Model.StageName'PreSeed'>>"
+										}
+									]
+								}
+							},
+							"response": []
+						} 
+					    ]
+				        },
+	{
+					"name": "System Query Options 4",
+					"item": [
+					   {
+							"name": "GET #orderBy option on Date field entity set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$orderby=<<Replace with PropName of Date Type>> desc\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Date Type>> desc\n"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $orderby decimal field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$orderby=<<Replace with PropName of Decimal Type>> desc",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Decimal Type>> desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+	                   {
+							"name": "Get $count option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages/$count",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages",
+										"$count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $top option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$top=2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $skip option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Stages?$skip=2\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Stages"
+									],
+									"query": [
+										{
+											"key": "$skip",
+											"value": "2\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        }
+						
+ ]},     	
+	
+	{
+			"name": "Document",
+			"item": [
+				{
+	
+					"name": "Post media entity",
+					"request": {
+						"method": "POST",
+						"header": [
+		                  {
+								"key": "DocId",
+								"value": "<<replace with value>>",
+								"type": "text"
+							}
+, 		                  {
+								"key": "Name",
+								"value": "<<replace with value>>",
+								"type": "text"
+							}
+, 		                  {
+								"key": "Type",
+								"value": "<<replace with value>>",
+								"type": "text"
+							}
+, 		                  {
+								"key": "Description",
+								"value": "<<replace with value>>",
+								"type": "text"
+							}
+, 		                  {
+								"key": "Date",
+								"value": "<<replace with value>>",
+								"type": "text"
+							}
+							 ],
+	                       "body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n        <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" viewBox=\"0 0 100 100\">\r\n            <g stroke=\"darkmagenta\" stroke-width=\"16\" fill=\"crimson\">\r\n                <circle cx=\"50\" cy=\"50\" r=\"42\"/>\r\n            </g>\r\n    \t</svg>",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/{{servletname}}/Documents",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{servletname}}",
+								"Documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Entity set",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/{{servletname}}/Documents",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{servletname}}",
+								"Documents"
+							]
+						}
+					},
+					"response": []
+				}
+				]
+				},
+  	
+	
+			        
+        
+ 	 	
+	
+	
+
+		{
+			"name": "Investor",
+			"item": [
+				{
+					"name": "Get Request",
+					"item": [
+						{
+							"name": "GET EntitySet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "InvestorByInvestorId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+
+		{
+					"name": "Post Request",
+					"item": [
+						{
+							"name": "POST Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"InvestorId\":98,\"Name\":\"Dhananjay Chaturvedi\",\"ContactNumber\":\"approach\",\"PortfolioSize\":\"idolize\",\"InvestmentPreferences\":[\"celebrate\"]}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+		{
+					"name": "Delete Request",
+					"item": [
+						{
+							"name": "Delete a Investor",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "PATCH Request",
+					"item": [
+						{
+							"name": "Patch Request of entity",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"InvestorId\":98,\"Name\":\"Dhananjay Chaturvedi\",\"ContactNumber\":\"approach\",\"PortfolioSize\":\"idolize\",\"InvestmentPreferences\":[\"celebrate\"]}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 1",
+					"item": [		        
+		    
+		                    
+						{
+							"name": "GET raw value of InvestorId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)/InvestorId/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(InvestorId)",
+										"InvestorId",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$filter=InvestorId eq 98\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "InvestorId eq 98\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)/Name/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(Name)",
+										"Name",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$filter=Name eq 'Dhananjay Chaturvedi'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Name eq 'Dhananjay Chaturvedi'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of ContactNumber",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)/ContactNumber/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(ContactNumber)",
+										"ContactNumber",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$filter=ContactNumber eq 'approach'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "ContactNumber eq 'approach'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of PortfolioSize",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)/PortfolioSize/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(PortfolioSize)",
+										"PortfolioSize",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$filter=PortfolioSize eq 'idolize'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "PortfolioSize eq 'idolize'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of InvestmentPreferences",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors(<<replace_with_keyFieldValue>>)/InvestmentPreferences/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors(InvestmentPreferences)",
+										"InvestmentPreferences",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$filter=InvestmentPreferences eq ''\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "InvestmentPreferences eq ''\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 4",
+					"item": [
+					   {
+							"name": "GET #orderBy option on Date field entity set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$orderby=<<Replace with PropName of Date Type>> desc\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Date Type>> desc\n"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $orderby decimal field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$orderby=<<Replace with PropName of Decimal Type>> desc",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Decimal Type>> desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+	                   {
+							"name": "Get $count option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors/$count",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors",
+										"$count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $top option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$top=2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $skip option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Investors?$skip=2\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Investors"
+									],
+									"query": [
+										{
+											"key": "$skip",
+											"value": "2\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        }
+						
+ ]},     	
+	
+			        
+        
+ 	 	
+	
+	
+
+		{
+			"name": "Founder",
+			"item": [
+				{
+					"name": "Get Request",
+					"item": [
+						{
+							"name": "GET EntitySet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "FounderByFId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+
+		{
+					"name": "Post Request",
+					"item": [
+						{
+							"name": "POST Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"FId\":16,\"Name\":\"Bhupen Talwar\",\"Role\":\"inflate\",\"Bio\":\"download\",\"ContactNumber\":\"construe\",\"LinkedInProfile\":\"saunter\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+		{
+					"name": "Delete Request",
+					"item": [
+						{
+							"name": "Delete a Founder",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "PATCH Request",
+					"item": [
+						{
+							"name": "Patch Request of entity",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"FId\":16,\"Name\":\"Bhupen Talwar\",\"Role\":\"inflate\",\"Bio\":\"download\",\"ContactNumber\":\"construe\",\"LinkedInProfile\":\"saunter\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 1",
+					"item": [		        
+		    
+		                    
+						{
+							"name": "GET raw value of FId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)/FId/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(FId)",
+										"FId",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$filter=FId eq 16\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "FId eq 16\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)/Name/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(Name)",
+										"Name",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$filter=Name eq 'Bhupen Talwar'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Name eq 'Bhupen Talwar'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Role",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)/Role/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(Role)",
+										"Role",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$filter=Role eq 'inflate'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Role eq 'inflate'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Bio",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)/Bio/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(Bio)",
+										"Bio",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$filter=Bio eq 'download'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Bio eq 'download'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of ContactNumber",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)/ContactNumber/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(ContactNumber)",
+										"ContactNumber",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$filter=ContactNumber eq 'construe'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "ContactNumber eq 'construe'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of LinkedInProfile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders(<<replace_with_keyFieldValue>>)/LinkedInProfile/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders(LinkedInProfile)",
+										"LinkedInProfile",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$filter=LinkedInProfile eq 'saunter'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "LinkedInProfile eq 'saunter'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 4",
+					"item": [
+					   {
+							"name": "GET #orderBy option on Date field entity set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$orderby=<<Replace with PropName of Date Type>> desc\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Date Type>> desc\n"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $orderby decimal field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$orderby=<<Replace with PropName of Decimal Type>> desc",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Decimal Type>> desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+	                   {
+							"name": "Get $count option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders/$count",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders",
+										"$count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $top option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$top=2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $skip option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Founders?$skip=2\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Founders"
+									],
+									"query": [
+										{
+											"key": "$skip",
+											"value": "2\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        }
+						
+ ]},     	
+	
+			        
+        
+ 	 	
+	
+	
+
+		{
+			"name": "Startup",
+			"item": [
+				{
+					"name": "Get Request",
+					"item": [
+						{
+							"name": "GET EntitySet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "StartupBySId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+
+		{
+					"name": "Post Request",
+					"item": [
+						{
+							"name": "POST Request",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"SId\":39,\"Name\":\"Kalyani Agarwal\",\"Industry\":\"please\",\"FoundingDate\":\"1977-09-02\",\"FundingReceived\":922354.9,\"ContactNumber\":\"regret\",\"Valuation\":215334.01,\"KeyMetrics\":[\"consecrate\"]}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									]
+								}
+							},
+							"response": []
+						}
+						]
+						},
+		{
+					"name": "Delete Request",
+					"item": [
+						{
+							"name": "Delete a Startup",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "PATCH Request",
+					"item": [
+						{
+							"name": "Patch Request of entity",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"SId\":39,\"Name\":\"Kalyani Agarwal\",\"Industry\":\"please\",\"FoundingDate\":\"1977-09-02\",\"FundingReceived\":922354.9,\"ContactNumber\":\"regret\",\"Valuation\":215334.01,\"KeyMetrics\":[\"consecrate\"]}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 1",
+					"item": [		        
+		    
+		                    
+						{
+							"name": "GET raw value of SId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/SId/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(SId)",
+										"SId",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=SId eq 39\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "SId eq 39\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/Name/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(Name)",
+										"Name",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=Name eq 'Kalyani Agarwal'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Name eq 'Kalyani Agarwal'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Industry",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/Industry/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(Industry)",
+										"Industry",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=Industry eq 'please'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Industry eq 'please'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of FoundingDate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/FoundingDate/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(FoundingDate)",
+										"FoundingDate",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=FoundingDate eq 1977-09-02\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "FoundingDate eq 1977-09-02\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of FundingReceived",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/FundingReceived/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(FundingReceived)",
+										"FundingReceived",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=FundingReceived eq 922354.9\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "FundingReceived eq 922354.9\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of ContactNumber",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/ContactNumber/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(ContactNumber)",
+										"ContactNumber",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=ContactNumber eq 'regret'\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "ContactNumber eq 'regret'\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of Valuation",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/Valuation/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(Valuation)",
+										"Valuation",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=Valuation eq 215334.01\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Valuation eq 215334.01\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+, 			    
+		                    
+						{
+							"name": "GET raw value of KeyMetrics",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/KeyMetrics/$value",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(KeyMetrics)",
+										"KeyMetrics",
+										"$value"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $filter option on a primitive field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$filter=KeyMetrics eq ''\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "KeyMetrics eq ''\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        },
+		{
+					"name": "System Query Options 4",
+					"item": [
+					   {
+							"name": "GET #orderBy option on Date field entity set",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$orderby=<<Replace with PropName of Date Type>> desc\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Date Type>> desc\n"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $orderby decimal field",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$orderby=<<Replace with PropName of Decimal Type>> desc",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$orderby",
+											"value": "<<Replace with PropName of Decimal Type>> desc"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+	                   {
+							"name": "Get $count option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups/$count",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups",
+										"$count"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $top option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$top=2",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET $skip option on entityset",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups?$skip=2\n",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups"
+									],
+									"query": [
+										{
+											"key": "$skip",
+											"value": "2\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					    ]
+				        }
+						
+ ,
+		{
+					"name": "Navigation  Request",
+					"item": [
+								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/CurrentStage",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)",
+										"CurrentStage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on Startups navigation property CurrentStage",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)?$expand=CurrentStage",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "CurrentStage"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+,  								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/Founders",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)",
+										"Founders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on Startups navigation property Founders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)?$expand=Founders",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "Founders"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+,  								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/PreviousRounds",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)",
+										"PreviousRounds"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on Startups navigation property PreviousRounds",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)?$expand=PreviousRounds",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "PreviousRounds"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+,  								{
+							"name": "Navigation Request for an Entity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)/Logo",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)",
+										"Logo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get $expand option on Startups navigation property Logo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}/{{servletname}}/Startups(<<replace_with_keyFieldValue>>)?$expand=Logo",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"{{servletname}}",
+										"Startups(<<replace_with_keyFieldValue>>)"
+									],
+									"query": [
+										{
+											"key": "$expand",
+											"value": "Logo"
+										}
+									]
+								}
+							}
+							,
+							"response": []
+						}
+					    ]
+				        }
+  ,       		{
+					"name": "metadata request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/{{servletname}}/$metadata",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{servletname}}",
+								"$metadata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]}
